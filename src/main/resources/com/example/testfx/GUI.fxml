@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.testfx.GUIController">
+   <children>
+      <Button fx:id="importBTN" layoutX="147.0" layoutY="34.0" mnemonicParsing="false" onAction="#importDataset" prefHeight="25.0" prefWidth="118.0" text="Import File" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="285.0" layoutY="34.0" prefHeight="221.0" prefWidth="186.0" vbarPolicy="NEVER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="179.0">
+               <children>
+                  <TextArea fx:id="originalSortTextArea" editable="false" layoutX="-3.0" layoutY="-3.0" prefHeight="227.0" prefWidth="188.0" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label alignment="CENTER" layoutX="331.0" layoutY="14.0" prefHeight="17.0" prefWidth="97.0" text="Original Data" />
+      <ScrollPane hbarPolicy="NEVER" layoutX="6.0" layoutY="266.0" prefHeight="221.0" prefWidth="281.0" vbarPolicy="NEVER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="230.0" prefWidth="287.0">
+               <children>
+                  <TextArea fx:id="sortedTextArea" editable="false" layoutY="-6.0" prefHeight="228.0" prefWidth="282.0" />
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label fx:id="sortingMethod" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="243.0" prefHeight="25.0" prefWidth="211.0" text="External Merge Sort" wrapText="true" />
+      <Label fx:id="timeComplexityLabel" layoutX="293.0" layoutY="296.0" prefHeight="17.0" prefWidth="172.0" text="Time Complexity:" />
+      <Label fx:id="spaceComplexityLabel" layoutX="292.0" layoutY="322.0" prefHeight="17.0" prefWidth="172.0" text="Space Complexity:" />
+      <Label fx:id="executionTimeLabel" alignment="TOP_LEFT" layoutX="292.0" layoutY="349.0" prefHeight="130.0" prefWidth="172.0" text="Execution Time:" wrapText="true" />
+      <Button fx:id="clearBTN" layoutX="147.0" layoutY="75.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="118.0" text="Clear" />
+      <Label fx:id="datasetLabel" layoutX="2.0" layoutY="38.0" prefHeight="17.0" prefWidth="137.0" text="Dataset: " />
+      <Label fx:id="sizeLabel" layoutX="2.0" layoutY="67.0" prefHeight="17.0" prefWidth="137.0" text="Size:" />
+      <Button fx:id="sortBTN" layoutX="12.0" layoutY="185.0" mnemonicParsing="false" onAction="#sort" prefHeight="25.0" prefWidth="253.0" text="SORT" />
+      <ChoiceBox fx:id="choiceBox" layoutX="12.0" layoutY="145.0" prefHeight="25.0" prefWidth="253.0" />
+      <Label fx:id="totalLines" layoutX="2.0" layoutY="100.0" prefHeight="17.0" prefWidth="137.0" text="Total Lines:" />
+   </children>
+</Pane>
