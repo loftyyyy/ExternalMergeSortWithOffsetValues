@@ -64,6 +64,7 @@ public class ExternalSortWithOffsetValues extends ExternalSort {
 
     @Override
     public List<Integer> sort() throws IOException {
+
         bufferPool = new BufferPool(numBuffers);
         File binaryFile = convertToBinary(new File(this.inputFilename));
 

@@ -157,6 +157,7 @@ public class GUIController implements Initializable {
             return;
         }
 
+        sortedTextArea.setText("");
         String method = sortingMethod.getText();
         long startTime = System.nanoTime();
 
