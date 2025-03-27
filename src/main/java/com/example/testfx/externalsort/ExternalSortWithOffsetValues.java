@@ -68,26 +68,21 @@ public class ExternalSortWithOffsetValues extends ExternalSort {
         bufferPool = new BufferPool(numBuffers);
         File binaryFile = convertToBinary(new File(this.inputFilename));
 
-        // Auto-detect offset if not manually set
         if (offset == 0) {
             offset = detectOffset(binaryFile);
         }
 
-        // If entire file is sorted (offset covers all pages)
         int totalPages = numPages(binaryFile);
         if (offset >= totalPages) {
-            // Just read the file and return it - it's already sorted
             return readSortedFile(binaryFile);
         }
 
         List<Run> runList = splitIntoRuns(binaryFile);
 
-        // Perform the merge phase
         while (runList.size() > 1) {
             runList = doAMergeIteration(runList);
         }
 
-        // Get the final sorted run
         if (runList.isEmpty()) {
             return new ArrayList<>();
         }

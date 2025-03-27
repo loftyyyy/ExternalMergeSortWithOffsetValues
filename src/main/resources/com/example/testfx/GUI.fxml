@@ -30,7 +30,7 @@
       </ScrollPane>
       <Label fx:id="sortingMethod" alignment="CENTER" contentDisplay="CENTER" layoutX="35.0" layoutY="243.0" prefHeight="25.0" prefWidth="211.0" text="External Merge Sort" wrapText="true" />
       <Label fx:id="timeComplexityLabel" layoutX="337.0" layoutY="263.0" prefHeight="17.0" prefWidth="95.0" text="Time Complexity" />
-      <Label fx:id="spaceComplexityLabel" layoutX="341.0" layoutY="364.0" prefHeight="17.0" prefWidth="97.0" text="Space Complexity:" />
+      <Label fx:id="spaceComplexityLabel" layoutX="294.0" layoutY="377.0" prefHeight="17.0" prefWidth="173.0" text="Space Complexity:" />
       <Label fx:id="executionTimeLabel" alignment="TOP_LEFT" layoutX="14.0" layoutY="225.0" prefHeight="18.0" prefWidth="268.0" text="Execution Time:" wrapText="true" />
       <Button fx:id="clearBTN" layoutX="147.0" layoutY="75.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="118.0" text="Clear" />
       <Label fx:id="datasetLabel" layoutX="2.0" layoutY="38.0" prefHeight="17.0" prefWidth="137.0" text="Dataset: " />
@@ -41,8 +41,5 @@
       <Label fx:id="TCBestCaseLabel" layoutX="294.0" layoutY="287.0" prefHeight="17.0" prefWidth="173.0" text="Best Case:" />
       <Label fx:id="TCAverageCaseLabel" layoutX="293.0" layoutY="309.0" prefHeight="17.0" prefWidth="177.0" text="Average Case:" />
       <Label fx:id="TCWorstCaseLabel" layoutX="293.0" layoutY="334.0" prefHeight="17.0" prefWidth="173.0" text="Worst Case:" />
-      <Label fx:id="SCBestCaseLabel" layoutX="294.0" layoutY="399.0" prefHeight="17.0" prefWidth="173.0" text="Best Case:" />
-      <Label fx:id="SCAverageCaseLabel" layoutX="293.0" layoutY="421.0" prefHeight="17.0" prefWidth="177.0" text="Average Case:" />
-      <Label fx:id="SCWorstCaseLabel" layoutX="293.0" layoutY="446.0" prefHeight="17.0" prefWidth="173.0" text="Worst Case:" />
    </children>
 </Pane>

@@ -67,15 +67,6 @@ public class GUIController implements Initializable {
     @FXML
     private Label TCWorstCaseLabel;
 
-    //Space Complexity
-    @FXML
-    private Label SCBestCaseLabel;
-
-    @FXML
-    private Label SCAverageCaseLabel;
-
-    @FXML
-    private Label SCWorstCaseLabel;
 
     private File selectedFile;
 
@@ -87,12 +78,10 @@ public class GUIController implements Initializable {
         datasetLabel.setText("No dataset loaded");
         totalLines.setText("Total Lines: ");
 
-        TCBestCaseLabel.setText("TCBestCase: ");
-        TCAverageCaseLabel.setText("TCAverageCase: ");
-        TCWorstCaseLabel.setText("TCWorstCase: ");
-        SCBestCaseLabel.setText("SCBestCase: ");
-        SCAverageCaseLabel.setText("SCAverageCase: ");
-        SCWorstCaseLabel.setText("SCWorstCase: ");
+        TCBestCaseLabel.setText("Best Case: ");
+        TCAverageCaseLabel.setText("Average Case: ");
+        TCWorstCaseLabel.setText("Worst Case: ");
+        spaceComplexityLabel.setText("Space Complexity: ");
 
 
         executionTimeLabel.setText("Execution Time: ");
@@ -164,13 +153,11 @@ public class GUIController implements Initializable {
         try {
             if(method.equals("External Merge Sort with Offset Values")) {
 
-                TCBestCaseLabel.setText("BestCase: O(N log N)");
-                TCAverageCaseLabel.setText("AverageCase: O(N log N)");
-                TCWorstCaseLabel.setText("WorstCase: O(N log N)");
+                TCBestCaseLabel.setText("Best Case: O(N log N)");
+                TCAverageCaseLabel.setText("Average Case: O(N log N)");
+                TCWorstCaseLabel.setText("Worst Case: O(N log N)");
+                spaceComplexityLabel.setText("Space Complexity: O(B)");
 
-                SCBestCaseLabel.setText("BestCase: O(N)");
-                SCAverageCaseLabel.setText("AverageCase: O(N)");
-                SCWorstCaseLabel.setText("WorstCase: O(N)");
 
                 // Check if it's the first sort or a subsequent sort
                 File metadataFile = new File(selectedFile.getAbsolutePath() + ".metadata");
@@ -236,13 +223,11 @@ public class GUIController implements Initializable {
                 executionTimeLabel.setText(timeInfo);
 
             } else {
-                TCBestCaseLabel.setText("BestCase: O(N logk(N/M)");
-                TCAverageCaseLabel.setText("AverageCase: O(N logk(N/M)");
+                TCBestCaseLabel.setText("BestCase: O(N log N)");
+                TCAverageCaseLabel.setText("AverageCase: O(N log N)");
                 TCWorstCaseLabel.setText("WorstCase: O(N log N)");
 
-                SCBestCaseLabel.setText("BestCase: O(M)");
-                SCAverageCaseLabel.setText("AverageCase: O(N)");
-                SCWorstCaseLabel.setText("WorstCase: O(N log N)");
+                spaceComplexityLabel.setText("Space Complexity: O(B)");
 
                 // Standard external merge sort
                 ExternalSort externalSort = new ExternalSort(selectedFile.getAbsolutePath());

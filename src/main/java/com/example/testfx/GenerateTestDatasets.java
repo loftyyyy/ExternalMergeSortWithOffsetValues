@@ -9,9 +9,10 @@ public class GenerateTestDatasets {
 
     public static void main(String[] args) throws IOException {
         GenerateTestDatasets generator = new GenerateTestDatasets();
-        generator.generateTestDataset("dataset_50pct_sorted.txt", 100000, 0.5);  // 50% sorted
-        generator.generateTestDataset("dataset_75pct_sorted.txt", 100000, 0.75); // 75% sorted
-        generator.generateTestDataset("dataset_25pct_sorted.txt", 100000, 0.25); // 25% sorted
+        generator.generateTestDataset("dataset_0pct_sorted.txt", 100000, 0);  // 0% sorted
+//        generator.generateTestDataset("dataset_50pct_sorted.txt", 100000, 0.5);  // 50% sorted
+//        generator.generateTestDataset("dataset_75pct_sorted.txt", 100000, 0.75); // 75% sorted
+//        generator.generateTestDataset("dataset_25pct_sorted.txt", 100000, 0.25); // 25% sorted
 
     }
         /**
