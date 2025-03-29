@@ -32,7 +32,7 @@ Our results indicate that while the offset-based external merge sort may have ad
 
 ## Contributors
 - Gwndlyn Lnnah Peralta (Leader)
-- Charisse Mae Priego
+- Princess Charisse Mae Priego
 - Jonathan James Sindo
 - John Alphonce Jornadal
 
