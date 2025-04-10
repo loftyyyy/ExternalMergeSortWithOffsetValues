@@ -35,6 +35,7 @@ Our results indicate that while the offset-based external merge sort may have ad
 - Princess Charisse Mae Priego
 - Jonathan James Sindo
 - John Alphonce Jornadal
+- Dranreb Jay Arzadon
 
 ## Acknowledgments
 We would like to thank our professor and the authors of the referenced paper for their insights into external merge sort optimization. We would also like to express our gratitude to our classmates for their support and feedback throughout the project. Especially our team leader, Gwndlyn Lnnah Peralta, for coordinating the project and ensuring its successful completion. Without her guidance and leadership, this project would not have been possible. So in my outmost respect, I would like to thank her for her dedication and hard work.
